@@ -7,6 +7,8 @@ body {
 #intro {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .Name {
@@ -27,21 +29,29 @@ body {
 
   color: rgb(166, 0, 243);
   Explore {
-    
     font-size: 10px;
   }
 }
 .Texting:hover ~ .Explore {
-    
-    color:  #ccc#333;
-  }
+  color: #ccc#333;
+}
+.motive_in_row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .Motive {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 245px;
-  padding-bottom: 100px;
+}
+.Motive2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Explore {
   color: white;
@@ -49,7 +59,22 @@ body {
   font-size: 80px;
   transition: 1s ease-in-out;
 }
+.Explore2 {
+  color: white;
+  font-family: "Bruno Ace", sans-serif;
+  font-size: 40px;
+  transition: 1s ease-in-out;
+}
+.Explore3mob {
+        display: none;
+    }
 .Explore:hover {
+  /* color: rgb(255, 0, 0); */
+
+  text-shadow: 0 0 60px #00ffcb;
+  transition: 1s ease-in-out;
+}
+.Explore2:hover {
   /* color: rgb(255, 0, 0); */
 
   text-shadow: 0 0 60px #00ffcb;
@@ -62,12 +87,10 @@ h1.Explore {
   text-align: center;
 }
 .Next {
-  padding: 122px;
-  margin-top: 318px;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .button {
@@ -156,6 +179,7 @@ button:focus::after {
 /* section2 */
 #I_do {
   background-color: #ffffff;
+  height: 100vh;
 }
 .About_Me {
   display: flex;
@@ -166,8 +190,8 @@ button:focus::after {
   padding: 30px;
   display: block;
   position: relative;
-  width: 500px; /* Adjust as needed */
-  height: 450px; /* Adjust as needed */
+  width: 40vh; /* Adjust as needed */
+  height: 40vh; /* Adjust as needed */
   transform: skewX(50deg);
   overflow: hidden;
 }
@@ -202,7 +226,7 @@ button:focus::after {
 }
 .par_fill {
   width: 70px;
-  height: 600px;
+  height: 50vh;
   display: inline-block;
   background: rgb(255, 102, 0);
   border: none;
@@ -231,7 +255,7 @@ button:focus::after {
 
 .My_Skills {
   width: 100%;
-  height: 740px;
+  height: 50vh;
   padding: 0%;
   background-image: url("Images/Default_bg.jpg");
   background-repeat: no-repeat;
@@ -268,7 +292,6 @@ button:focus::after {
 
 /* new des  */
 
-
 .circle {
   background-color: #00ffcb;
   width: 8px;
@@ -281,36 +304,161 @@ button:focus::after {
   pointer-events: none;
   mix-blend-mode: screen;
   z-index: 10;
-  box-shadow: 0px 0px 8px 0px #a9e5fd inset, 0px 0px 24px 0px #3bd8ff, 0px 0px 8px 0px #FFFFFF42;
+  box-shadow: 0px 0px 8px 0px #a9e5fd inset, 0px 0px 24px 0px #3bd8ff,
+    0px 0px 8px 0px #ffffff42;
 }
-
 
 /* end new des  */
-
-
-@media only screen and (max-width: 1440px) {
-  .Motive {
-    padding-top: 419px;
+@media only screen and (max-width: 1780px) {
+  
+  .par_fill {
+    width: 5vh;
+    height: 50vh;
+    display: inline-block;
+    background: rgb(255, 102, 0);
+    border: none;
+    box-shadow: -30px 20px 20px rgb(39, 39, 39);
+    transform: skewX(30deg);
+    transition: 1s 
+ease-in-out;
+}
+ .Me_word {
+    padding-left: 128px;
+    padding-right: 112px;
+}
+}
+@media only screen and (max-width: 1540px) {
+  .Explore2 {
+    color: white;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 24px;
+    transition: 1s ease-in-out;
   }
-  .Next {
-    padding: 122px;
-    margin-top: 159px;
+     .Me_word {
+        padding-left: 93px;
+        padding-right: 77px;
+    }
+    .My_pic_parell {
+    padding: 30px;
+    display: block;
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+    transform: skewX(50deg);
+    overflow: hidden;
+}
+}
+@media only screen and (max-width: 1400px) {
+  .Me_word h1 {
+    font-size: 41px;
+    font-family: "Bruno Ace", sans-serif;
+    color: #313133;
+    transition: 1s 
+ease-in-out;
+}
+#Details {
+    font-size: 16px;
+    font-family: "Bruno Ace", sans-serif;
+    color: #313133;
+}
+    .par_fill {
+        width: 4vh;
+        height: 46vh;
+        display: inline-block;
+        background: rgb(255, 102, 0);
+        border: none;
+        box-shadow: -30px 20px 20px rgb(39, 39, 39);
+        transform: skewX(30deg);
+        transition: 1s 
+ease-in-out;
+    }
+}
+@media only screen and (max-width: 1150px) {
+  .Explore {
+    color: white;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 54px;
+    transition: 1s ease-in-out;
+  }
+  .Explore2 {
+    color: white;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 18px;
+    transition: 1s ease-in-out;
+  }
+  .par_fill {
+       display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .Texting {
+    font-family: "Bruno Ace", sans-serif;
+    font-style: normal;
+    font-size: 21px;
+    height: min-content;
+    font-weight: bolder;
+    color: white;
+    cursor: default;
+    transition: 1s ease-in-out;
+  }
+  .Explore {
+    color: white;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 36px;
+    transition: 1s ease-in-out;
+  }
+  .Explore2 {
+    color: white;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 14px;
+    transition: 1s ease-in-out;
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .Next {
-    padding: 122px;
-    margin-top: 179px;
-  }
+@media only screen and (max-width: 550px) {
+  .My_pic_parell {
+    padding: 30px;
+    display: block;
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    transform: skewX(50deg);
+    overflow: hidden;
 }
-
+  .About_Me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+    .Texting {
+        font-size: 23px;
+    }
+      .Explore {
+        color: white;
+        font-family: "Bruno Ace", sans-serif;
+        font-size: 32px;
+        transition: 1s 
+ease-in-out;
+    }
+      .Explore2 {
+        color: white;
+        font-family: "Bruno Ace", sans-serif;
+        font-size: 10px;
+        transition: 1s 
+ease-in-out;
+    }
+}
 @media only screen and (max-width: 860px) {
-  .Name {
-    display: flex;
-    width: 100%;
-    padding-left: 30px;
+  .My_Skills ul {
+    grid-template-columns: repeat(1, 1fr);
   }
+  .About_Me {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  
   .Texting {
     font-family: "Bruno Ace", sans-serif;
     font-style: normal;
@@ -321,41 +469,9 @@ button:focus::after {
     cursor: default;
     transition: 1s ease-in-out;
   }
-  .Motive {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 460px;
-    padding-bottom: 10vh;
-  }
-  .Explore {
-    color: white;
-    font-family: "Bruno Ace", sans-serif;
-    font-size: 40px;
-    transition: 1s ease-in-out;
-  }
-  .About_Me {
-    display: flex;
-    justify-content: space-evenly;
-    overflow: hidden;
-  }
-  .My_pic_parell {
-    padding: 30px;
-    display: block;
-    position: relative;
-    width: 500px; /* Adjust as needed */
-    height: 450px; /* Adjust as needed */
-    transform: skewX(-30deg);
-    overflow: hidden;
-  }
-  .my_pic {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 50px 30px black;
-    transform: skewX(30deg);
-  }
+
+  
+
   .Me_word {
     padding-left: 30px;
     padding-right: 10px;
@@ -394,28 +510,47 @@ button:focus::after {
   .Texting {
     font-size: 19px;
   }
-  .Motive {
-    padding-top: 179px;
-    padding-bottom: 19vh;
-  }
-  .Next {
-    padding: 58px;
-    margin-top: 42px;
-  }
+
   h1.Explore {
-    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
   .My_pic_parell {
-    padding: 15px;
+    padding: 30px;
     display: block;
     position: relative;
-    width: 330px;
-    height: 368px;
-    /* transform: skewX(-30deg); */
-    /* overflow: hidden; */
-  }
+    width: 20vh;
+    height: 20vh;
+    transform: skewX(50deg);
+    overflow: hidden;
 }
-@media only screen and (max-width: 414px) {
+  .Me_word h1 {
+        margin: 0px;
+        font-size: 25px;
+        font-family: "Bruno Ace", sans-serif;
+        color: #313133;
+        transition: 1s 
+ease-in-out;
+    }
+        #Details {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .My_Skills li {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-family: "Bruno Ace", sans-serif;
+    cursor: pointer;
+    font-size: 23px;
+    transition: 0.3s 
+ease-in-out;
+}
+}
+@media only screen and (max-width: 430px) {
   .My_Skills ul {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -424,50 +559,50 @@ button:focus::after {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 10px;
   }
-  #Details {
-    margin-top: 84px;
-    margin-bottom: 83px;
-    
+
+  
+.My_pic_parell
+ {
+    padding: 30px;
+    display: block;
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+    transform: skewX(50deg);
+    overflow: hidden;
 }
-.Me_word h1 {
-  margin: 18px;
-  font-size: 50px;
-  font-family: "Bruno Ace", sans-serif;
-  color: #313133; 
-  transition: 1s ease-in-out;
-}
-  .Me_word {
-    
-    padding: 33px;
-}
-.my_pic:focus
-.My_Skills {
-  height: 896px;
-}
+  .my_pic:focus .My_Skills {
+    height: 896px;
+  }
   .Texting {
     font-size: 19px;
   }
-  .Motive {
-    padding-top: 300px;
-    padding-bottom: 24vh;
+  .Explore {
+    color: white;
+    font-family: "Bruno Ace", sans-serif;
+    font-size: 27px;
+    transition: 1s ease-in-out;
   }
+  .Explore2 {
+    display: none;
+  }
+  .Explore3mob {
+        color: white;
+        font-family: "Bruno Ace", sans-serif;
+        font-size: 20px;
+        transition: 1s 
+ease-in-out;
+        display: block;
+        text-align: center;
+    }
+  
   .Next {
-    padding: 58px;
-    margin-top: 42px;
-  }
-  h1.Explore {
-    padding: 10px;
-  }
-  .My_pic_parell {
-    margin: 22px;
-    padding: 15px;
-    display: block;
-    position: relative;
-    width: 330px;
-    height: 368px;
-    /* transform: skewX(-30deg); */
-    /* overflow: hidden; */
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 45px;
+}
+  
 }
 /* .bruno-ace-regular {
     font-family: "Bruno Ace", sans-serif;
@@ -477,4 +612,3 @@ button:focus::after {
 /* display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px; */
-

@@ -6,6 +6,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
   }
   .SkillHead h1{
     color: #ffffff;
@@ -43,7 +44,7 @@ body{
   .skillbarbox{
     display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+  grid-gap: 20px;
   }
   .skills h1{ /*change font family of heading*/
 	font-family: "Bruno Ace", sans-serif;
@@ -53,14 +54,15 @@ body{
 
 li{ /*style the li tag*/
 	list-style-type: none;
-    font-size: 5 px;
+    font-size: 16px;
 	font-family: "Bruno Ace", sans-serif;
       font-weight: 600;
       font-style: normal;
 }
 
 .skills{ /*style the text*/
-	width: 500px;
+	width: 90%;
+    max-width: 600px;
 	margin: 60px auto;
 	color: #fff;
 }
@@ -72,15 +74,15 @@ li{ /*style the li tag*/
 .bar{ /*style the bar*/
 	background-color: #353b48;
 	display: block;
-	height: 2px;
+	height: 5px;
 	border: 1px solid rgba(0,0,0,0.3);
-	border-radius: 3px;
+	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 0 10px #2187e7b3;
 }
 
 .bar span{ /*style the span tag*/
-	height: 2px;
+	height: 5px;
 	float: left;
 	background-color: #2187e7;
 }
@@ -154,26 +156,26 @@ li{ /*style the li tag*/
 	0%{
 		width: 0%;
 	}
-
+	
 	100%{
 		width: 80%;
 	}
 }
 .xml{ /*set skills and animation of jquery*/
-	width: 40%;
+	width: 50%;
 	animation: xml 2s;
 }
 @keyframes xml{ /*animate jquery skills*/
 	0%{
 		width: 0%;
 	}
-
+	
 	100%{
-		width: 40%;
+		width: 50%;
 	}
 }
 .dart{ /*set skills and animation of jquery*/
-	width: 40%;
+	width: 50%;
 	animation: dart 2s;
 }
 @keyframes dart{ /*animate jquery skills*/
@@ -182,7 +184,20 @@ li{ /*style the li tag*/
 	}
 
 	100%{
-		width: 40%;
+		width: 50%;
+	}
+}
+.Work{ /*set skills and animation of jquery*/
+	width: 20%;
+	animation: dart 2s;
+}
+@keyframes Work{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+	
+	100%{
+		width: 20%;
 	}
 }
 .sqlite{ /*set skills and animation of jquery*/
@@ -430,3 +445,32 @@ li{ /*style the li tag*/
 	transition: background-color 0.3s, box-shadow 0.3s;
 
   }
+
+  @media (max-width: 768px) {
+    .skillbarbox {
+      grid-template-columns: 1fr;
+    }
+  
+    .SkillHead h1 {
+      font-size: 30px;
+    }
+  
+    .skills {
+      margin: 40px auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .SkillHead h1 {
+      font-size: 24px;
+    }
+  
+    li {
+      font-size: 14px;
+    }
+  
+    .skills {
+      margin: 20px auto;
+    }
+  }
+  
